@@ -21,6 +21,17 @@
     p { color: #ccc; margin-bottom: 12px; }
     ul { color: #ccc; padding-left: 20px; }
     ul li { margin-bottom: 8px; }
+    .badge {
+      display: inline-block;
+      background: #f5c300;
+      color: #000;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 1px 7px;
+      border-radius: 20px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
     .contact {
       margin-top: 40px;
       background: #1a1a1a;
@@ -40,15 +51,17 @@
   <p class="subtitle">고객 지원 페이지</p>
 
   <h2>앱 소개</h2>
-  <p>러닝화 리포트는 Apple 건강 앱과 연동하여 러닝화별 페이스, 심박수, 케이던스, 연비를 분석해주는 앱입니다.</p>
+  <p>러닝화 리포트는 Apple 건강 앱과 연동하여 러닝화별 퍼포먼스 데이터를 분석해주는 앱입니다. 페이스, 심박수, 달리기 파워, 연비 등 다양한 지표를 신발별로 기록하고 비교하여, 감이 아닌 데이터로 내게 딱 맞는 러닝화를 찾을 수 있습니다.</p>
 
   <h2>주요 기능</h2>
   <ul>
-    <li>러닝화별 평균 페이스, 심박수, 케이던스 통계</li>
-    <li>심박수 기반 연비(m/beat) 계산</li>
     <li>Apple 건강 앱 연동 자동 러닝 기록 불러오기</li>
+    <li>러닝화별 평균 페이스, 심박수, 달리기 파워, 케이던스, 보폭 길이, 지면 접촉 시간, 수직 진폭 통계</li>
+    <li>심박수 기반 연비(m/beat) 및 파워 기반 연비(m/kJ) 계산</li>
+    <li>수명 게이지 — 목표 주행 거리 대비 현재 누적 거리 시각화</li>
+    <li>Apple 건강 앱에 기록되지 않은 거리 및 시간 수동 추가</li>
     <li>러닝화 사진 및 메모 등록</li>
-    <li>러닝화별 심박수 추이 그래프</li>
+    <li>러닝화 지표 1대1 비교 <span class="badge">PRO</span></li>
   </ul>
 
   <h2>자주 묻는 질문</h2>
@@ -61,6 +74,15 @@
 
   <h2 style="color:#ccc; font-size:1rem;">Q. 연비(m/beat)는 무엇인가요?</h2>
   <p>심박수 1회당 달린 거리(미터)를 나타내는 지표로, 수치가 높을수록 같은 심박수에서 더 많이 달린 효율적인 러닝화임을 의미합니다.</p>
+
+  <h2 style="color:#ccc; font-size:1rem;">Q. 파워 기반 연비(m/kJ)는 무엇인가요?</h2>
+  <p>소비한 에너지 1kJ당 달린 거리(미터)를 나타내는 지표입니다. Apple Watch 또는 달리기 파워를 지원하는 기기가 있을 때 측정됩니다. 수치가 높을수록 에너지 효율이 좋은 러닝화를 의미합니다.</p>
+
+  <h2 style="color:#ccc; font-size:1rem;">Q. 러닝화 1대1 비교 기능은 어떻게 사용하나요?</h2>
+  <p>러닝화 상세 화면 하단의 '러닝화 지표 1대1 비교' 버튼을 탭한 후, 비교할 다른 러닝화를 선택하면 두 신발의 모든 퍼포먼스 지표를 나란히 비교할 수 있습니다. 이 기능은 PRO 구매 후 이용 가능합니다.</p>
+
+  <h2 style="color:#ccc; font-size:1rem;">Q. PRO 구매 후 기기를 바꿨는데 다시 결제해야 하나요?</h2>
+  <p>아닙니다. 동일한 Apple ID로 로그인된 기기라면 구매 복원 기능을 통해 무료로 다시 잠금 해제할 수 있습니다. 구매 화면 하단의 '구매 복원' 버튼을 이용해 주세요.</p>
 
   <div class="contact">
     <h2 style="margin-top:0">문의하기</h2>
